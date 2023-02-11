@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/56f6042595.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <link rel="stylesheet" href="assets/sass/style.css">
+</head>
+
+<body>
+  <div class="main">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark  bg-dark fixed-top d-flex justify-content-center">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand fw-bold fs-1">Read<span
+              class="fst-normal text-warning">it</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#listofnav">
+            <span class="navbar-toggler-icon"></span></button>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="listofnav">
+            <ul class="navbar-nav text-center fs-4">
+              <li class="nav-item"><a class="nav-link m-1 fs-4" href="index.html">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link active m-1 fs-4" href="books.html">Books</a>
+              </li>
+              <li class="nav-item"><a class="nav-link m-1 fs-4" href="about.html">About</a>
+              </li>
+              <li class="nav-item"><a class="nav-link m-1 fs-4" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item"><a class="cursor-pointer nav-link m-1 fs-4" data-bs-toggle="modal"
+                  data-bs-target="#signin">SignIn</a></li>
+              <li class="nav-item"><a class="cursor-pointer nav-link m-1 fs-4" data-bs-toggle="modal"
+                  data-bs-target="#signup">SignUp</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="homeimage">
+      <div class="overlay center vh-100">
+        <h1 class="text-white fw-bold nav-text">Books</h1>
+      </div>
+    </section>
+    <div class="container books">
+      <div class="mt-3 mb-5 filter-button-group ">
+        <div class="row d-flex text-white">
+          <div class="col book-btn">
+            <button class="btn w-100 books-btn" data-filter="*" type="button">All</button>
+          </div>
+          <div class="col book-btn">
+            <button class="btn w-100 books-btn" data-filter=".biography" type="button">Biography</button>
+          </div>
+          <div class="col book-btn">
+            <button class="btn w-100 books-btn" data-filter=".self-improvement" type="button">Self Improvement</button>
+          </div>
+          <div class="col book-btn">
+            <button class="btn w-100 books-btn" data-filter=".science-fiction" type="button">Science Fiction</button>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center g-4" id="books-list">
+        <div class="col-lg-4 col-md-6 self-improvement">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/self-improvement/atomic-habits.jpg" alt="atomic-habits image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Atomic Habits</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3FZ1inF" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>James Clear</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 self-improvement">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/self-improvement/black-box-thinking.png" alt="Black-Box-Thinking-Summary image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Black Box Thinking</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3ePxmOX" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Matthew Syed</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 self-improvement">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/self-improvement/better-than-before.jpg" alt="Better-Than-Before image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Better Than Before</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/331Q7fA" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Gretchen Rubin</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 self-improvement">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/self-improvement/anything-you-want.jpg" alt="Anything-You-Want image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Anything You Want</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3F2LsY8" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Derek Sivers</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 self-improvement">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/self-improvement/the-7-habits.png"
+                alt="The-7-Habits-of-Highly-Effective-People image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">The 7 Habits of Highly Effective People</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3EVl81O" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Stephen R. Covey</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 self-improvement">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/self-improvement/rich-dad-poor-dad.jpg" alt="rich-dad-poor-dad image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Rich Dad Poor Dad</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3zrc4AI" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Robert T. Kiyosaki</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 biography">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/biography/gandhi-before-india.jpg" alt="gandhi-before-india image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Gandhi Before India</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3pVCHL6" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Ramachandra Guha</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 biography">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/biography/my-journey-transforming-dreams.jpeg"
+                alt="my-journey-transforming-dreams image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">My Journey Transforming Dreams Into Actions</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3JExL50" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>A.P.J. Abdul KALAM</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 biography">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/biography/the-dhoni-touch.jpeg" alt="the-dhoni-touch image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">The Dhoni Touch</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3mZS2YW" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Bharat Sundaresan</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 biography">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/biography/the-man-who-know-infinity.jpg" alt="the-man-who-know-infinity">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">The Man Who Know Infinity</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3sT7f1U" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Robert Kanigel</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 biography">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/biography/unbrackable.jpg" alt="unbrackable image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Unbrackable</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3pR78BX" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>M.C. Mary Kom</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 biography">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/biography/why-i-am-athest.jpg" alt="why-i-am-athest image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Why I Am Athest</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3zu2GMx" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Bhagat Singh</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 science-fiction">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/science-fiction/black-hole.jpg" alt="black-hole image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Black Holes</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3zqpv3Z" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Stephen Hawking</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 science-fiction">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/science-fiction/cosmos.jpeg" alt="cosmos image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Cosmos</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3HCvR2Z" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Carl Sagan</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 science-fiction">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/science-fiction/my-invention.jpeg" alt="my-invention image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">My Inventions</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3mSr71l" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Nikola Tesla</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 science-fiction">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/science-fiction/quantum-computing.jpg" alt="quantum-computing image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Quantum Computing</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3sUSYBT" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Brian Clegg</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 science-fiction">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/science-fiction/relativity.jpg" alt="relativity image">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">Relativity</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3zoMCff" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Albert Einstein</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 science-fiction">
+          <div class="books-card ">
+            <div class="center pt-3 pb-3">
+              <img src="assets/images/science-fiction/the-martian.jpg" alt="the-martian">
+            </div>
+            <div>
+              <div class="p-2 text-center h3">The Martian</div>
+              <div class="center">Buy the book : <a href="https://amzn.to/3zv6MEu" target="_blank"
+                  class="linktext ps-1">Amazon</a></div>
+              <br>
+              <div class="center pt-2 pb-2 blockquote-footer"><em>Andy Weir</em></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section for modal of SignUp  -->
+  <section>
+    <div class="modal" id="signup" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="center ">
+              <div class="modalcard">
+                <div class="p-3">
+                  <div>
+                    <p class="center fs-1 fw-bold">SignUp</p>
+                  </div>
+                  <div>
+                    <form>
+                      <label>Name :</label>
+                      <input class="form-control" maxlength="32" type="text" placeholder="Enter your name" minlength="3"
+                        pattern="[a-zA-Z'-'\s]*" required><br>
+                      <label>Email id :</label>
+                      <input class="form-control" maxlength="32" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        type="email" placeholder="Enter your email id" required><br>
+                      <label>Mobile no. :</label>
+                      <input class="form-control" maxlength="10" pattern="[0-9]{10}" type="text"
+                        placeholder="Mobile number should be 10 digit" required><br>
+                      <label>Password :</label>
+                      <input class="form-control" maxlength="32" pattern=".{8,}" type="text"
+                        placeholder="password length larger then 7" required><br>
+                      <input class="modal-inside-button" type="submit" id="signupbtn">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section for model of SignIn -->
+  <section>
+    <div class="modal " id="signin" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="center ">
+              <div class="modalcard">
+                <div class="p-3">
+                  <div>
+                    <p class="center fs-1 fw-bold">Login</p>
+                  </div>
+                  <br>
+                  <form>
+                    <label>Email id :</label>
+                    <input class="form-control" maxlength="32" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      type="email" placeholder="Enter your email id" required><br>
+                    <label>Password :</label>
+                    <input class="form-control" maxlength="32" pattern=".{8,}" type="text"
+                      placeholder="Enter your password" required><br>
+                    <input class="modal-inside-button" type="submit" id="signinbtn">
+                  </form>
+                  <p class="center m-2"><a href="#" class="forgot-password btn">forgot password?</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section end -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <h3>our locations</h3>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-map-marker-alt"></i> Chandigarh </a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-map-marker-alt"></i> Delhi</a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-map-marker-alt"></i> Bihar</a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-map-marker-alt"></i> Assam</a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-map-marker-alt"></i> Mumbai</a>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <h3>quick links</h3>
+          <a href="index.html" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Home </a>
+          <a href="books.html" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Books </a>
+          <a href="about.html" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> About Us </a>
+          <a href="contact.html" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Contact Us </a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Login / Register </a>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <h3>Top Books</h3>
+          <a href="index.html#10_happier" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> 10% Happier </a>
+          <a href="index.html#adapt" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Adapt</a>
+          <a href="index.html#free_will" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Free Will</a>
+          <a href="index.html#incognito" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Incognito</a>
+          <a href="index.html#10x_rule" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> The 10X Rule</a>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <h3>contact info</h3>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-phone"></i> +91-123-456-7890 </a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-phone"></i> +91-111-222-3333 </a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-envelope"></i> bikash@gmail.com </a>
+          <img src="assets/images/home-page-img/mapimg.png" class="map" alt="">
+        </div>
+      </div>
+      <div class="footer-follow-icon">
+        <div class="d-flex justify-content-center">
+          <a href="#" class="fab fa-facebook-f follow_icon"></a>
+          <a href="#" class="fab fa-twitter follow_icon"></a>
+          <a href="#" class="fab fa-instagram follow_icon"></a>
+          <a href="#" class="fab fa-linkedin follow_icon"></a>
+          <a href="#" class="fab fa-pinterest follow_icon"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="center bg-light p-3 text-dark">Readit Theme by <i class="p-1"> Bikash Choudhury</i></div>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+/* Contact us */
+
+.icon {
+  font-size: 35px;
+}
+
+.card {
+  @include card;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    color: $yellowColor !important;
+  }
+}
+
+.contact-form {
+  padding: 40px 20px;
+  border-radius: 5px !important;
+  margin: 20px;
+}
+
+.contact-form-button {
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  width: 100%;
+  border-radius: 25px;
+  font-size: 18px;
+  border: none;
+  color: #000000c7;
+  background-color: $yellowColor;
+
+  &:hover {
+    background-color: $yellowHoverColor;
+  }
+}
+

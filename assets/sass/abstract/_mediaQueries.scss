@@ -1,0 +1,42 @@
+@media only screen and (max-width: 576px) {
+	.cardheader {
+		text-align: center;
+	}
+	.cardimg {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.book-btn{
+		margin: 10px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.summary-p{
+		text-align: start;
+	}
+	
+	.index-p{
+		text-align: start;
+	}
+}
+
+@media only screen and (max-width: 630px) {
+	.news-letter-input{
+		width: 100%;
+	}
+	.news-letter-btn{
+		margin-top: 10px;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.about-p {
+		padding: 0 20%;
+	}
+}

@@ -1,0 +1,17 @@
+.about-icon {
+  @include aboutIcon;
+}
+
+.about-info {
+  @include aboutInfo;
+}
+
+.about-p {
+  color: rgba(0, 0, 0, 0.537);
+}
+
+.aboutus-hr{
+  height: 2px !important; 
+  color: rgb(255, 132, 0); 
+  opacity: .7;
+}

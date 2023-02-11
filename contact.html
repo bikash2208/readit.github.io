@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css"
+    integrity="sha512-1fPmaHba3v4A7PaUsComSM4TBsrrRGs+/fv0vrzafQ+Rw+siILTiJa0NtFfvGeyY5E182SDTaF5PqP+XOHgJag=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/56f6042595.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/sass/style.css">
+</head>
+
+<body>
+  <div class="main">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark  bg-dark fixed-top d-flex justify-content-center">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand fw-bold fs-1">Read<span
+              class="fst-normal text-warning">it</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#listofnav">
+            <span class="navbar-toggler-icon"></span></button>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="listofnav">
+            <ul class="navbar-nav text-center fs-4">
+              <li class="nav-item"><a class="nav-link m-1 fs-4" href="index.html">Home</a>
+              </li>
+              <li class="nav-item"><a class="nav-link m-1 fs-4" href="books.html">Books</a>
+              </li>
+              <li class="nav-item"><a class="nav-link m-1 fs-4" href="about.html">About</a>
+              </li>
+              <li class="nav-item"><a class="nav-link active m-1 fs-4" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="cursor-pointer nav-link m-1 fs-4" data-bs-toggle="modal"
+                  data-bs-target="#signin">SignIn</a></li>
+              <li class="nav-item"><a class="cursor-pointer nav-link m-1 fs-4" data-bs-toggle="modal"
+                  data-bs-target="#signup">SignUp</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="homeimage">
+      <div class="overlay center vh-100">
+        <h1 class="text-white fw-bold nav-text">Contact Us</h1>
+      </div>
+    </section>
+    <div class="container">
+      <div class="center m-5 fw-bold fs-1">
+        <h1>Let's Connect</h1>
+        <hr>
+      </div>
+      <div class="row center">
+        <div class="col-xl-6 col-lg-6">
+          <div class="row center">
+            <div class="card col-md-4 center">
+              <i class="center p-3 carditem icon fas fa-phone-alt"></i>
+              <h3>PHONE</h3>
+              <h6>349-876-5400</h6>
+            </div>
+            <div class="card col-md-4 center">
+              <i class="center p-3 carditem icon fas fa-envelope"></i>
+              <h3>EMAIL</h3>
+              <h6>bikash@gmail.com</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-6">
+          <div class="contact-form border ">
+            <div class="fs-4 fw-bold center">
+              <p>AVAILABLE 24 HOURS A DAY!
+                </h4>
+            </div>
+            <div class="">
+              <form action="">
+                <input class="contact-form-input form-control" maxlength="32" type="text" minlength="3"
+                  pattern="[a-zA-Z'-'\s]*" required placeholder="Enter your name">
+                <input class="contact-form-input form-control" maxlength="32"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" required placeholder="Enter your email">
+                <input class="contact-form-input form-control" maxlength="10" pattern="[0-9]{10}" type="text" required
+                  placeholder="Enter your mobile number">
+                <textarea class="text form-control" name="comment" maxlength="32" id="comment" cols="30" rows="5"
+                  required placeholder="Enter your message"></textarea><br>
+                <input class="contact-form-button" type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section for modal of SignUp  -->
+  <section>
+    <div class="modal" id="signup" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="center ">
+              <div class="modalcard">
+                <div class="p-3">
+                  <div>
+                    <p class="center fs-1 fw-bold">SignUp</p>
+                  </div>
+                  <div>
+                    <form>
+                      <label>Name :</label>
+                      <input class="form-control" maxlength="32" type="text" placeholder="Enter your name" minlength="3"
+                        pattern="[a-zA-Z'-'\s]*" required><br>
+                      <label>Email id :</label>
+                      <input class="form-control" maxlength="32" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        type="email" placeholder="Enter your email id" required><br>
+                      <label>Mobile no. :</label>
+                      <input class="form-control" maxlength="10" pattern="[0-9]{10}" type="text"
+                        placeholder="Mobile number should be 10 digit" required><br>
+                      <label>Password :</label>
+                      <input class="form-control" maxlength="32" pattern=".{8,}" type="text"
+                        placeholder="password length larger then 7" required><br>
+                      <input class="modal-inside-button" type="submit" id="signupbtn">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section for model of SignIn -->
+  <section>
+    <div class="modal " id="signin" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="center ">
+              <div class="modalcard">
+                <div class="p-3">
+                  <div>
+                    <p class="center fs-1 fw-bold">Login</p>
+                  </div>
+                  <br>
+                  <form>
+                    <label>Email id :</label>
+                    <input class="form-control" maxlength="32" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                      type="email" placeholder="Enter your email id" required><br>
+                    <label>Password :</label>
+                    <input class="form-control" maxlength="32" pattern=".{8,}" type="text"
+                      placeholder="Enter your password" required><br>
+                    <input class="modal-inside-button" type="submit" id="signinbtn">
+                  </form>
+                  <p class="center m-2"><a href="#" class="forgot-password btn">forgot password?</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section end -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <h3>our locations</h3>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-map-marker-alt"></i> Chandigarh </a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-map-marker-alt"></i> Delhi</a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-map-marker-alt"></i> Bihar</a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-map-marker-alt"></i> Assam</a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-map-marker-alt"></i> Mumbai</a>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <h3>quick links</h3>
+          <a href="index.html" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Home </a>
+          <a href="books.html" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Books </a>
+          <a href="about.html" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> About Us </a>
+          <a href="contact.html" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Contact Us </a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Login / Register </a>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <h3>Top Books</h3>
+          <a href="index.html#10_happier" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> 10% Happier </a>
+          <a href="index.html#adapt" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Adapt</a>
+          <a href="index.html#free_will" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Free Will</a>
+          <a href="index.html#incognito" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> Incognito</a>
+          <a href="index.html#10x_rule" class="footer-ai"> <i class="footer-icon fas fa-arrow-right"></i> The 10X Rule</a>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6">
+          <h3>contact info</h3>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-phone"></i> +91-123-456-7890 </a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-phone"></i> +91-111-222-3333 </a>
+          <a href="#" class="footer-ai"> <i class="footer-icon fas fa-envelope"></i> bikash@gmail.com </a>
+          <img src="assets/images/home-page-img/mapimg.png" class="map" alt="">
+        </div>
+      </div>
+      <div class="footer-follow-icon">
+        <div class="d-flex justify-content-center">
+          <a href="#" class="fab fa-facebook-f follow_icon"></a>
+          <a href="#" class="fab fa-twitter follow_icon"></a>
+          <a href="#" class="fab fa-instagram follow_icon"></a>
+          <a href="#" class="fab fa-linkedin follow_icon"></a>
+          <a href="#" class="fab fa-pinterest follow_icon"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="center bg-light p-3 text-dark">Readit Theme by <i class="p-1"> Bikash Choudhury</i></div>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+/* Index page */
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* code for footer */
+
+.footer-ai {
+  display: block;
+  color: $cardColor;
+  text-decoration: none;
+  padding-bottom: 1rem;
+
+  &:hover{
+    padding-left: 20px;
+    color: $cardColor;
+  }
+}
+
+.footer-icon {
+  color: $yellowColor;
+}
+
+.follow_icon {
+  height: 4rem;
+  width: 4rem;
+  font-size: 1.5rem;
+  color: $colorWhite;
+  background: $yellowColor;
+  margin: 0 0.3rem;
+  border-radius: 50%;
+  padding: 1.4rem 0;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: $cardColor;
+    color: $colorWhite;
+  }
+}
+
+footer {
+  background-color: rgba(155, 155, 155, 0.063);
+  padding: 2rem;
+}
+
+.map {
+  width: 100% !important;
+  opacity: 0.4;
+}
+
+.footer-follow-icon {
+  margin: 50px 10px 0px 10px;
+}
+
+body {
+  background-color: $colorWhite;
+  line-height: 1.5;
+}
+
+.index-p {
+  padding: 24px;
+  font-size: 21px;
+  text-align: justify;
+}
+
+.linktext {
+  color: $yellowHoverColor;
+
+  &:hover {
+    background-color: $yellowColor;
+    transition: 0.5s;
+    color: $colorWhite;
+  }
+}
+
+.cardimg {
+  margin-right: 48px;
+}
+
+img {
+  max-width: 140px;
+  height: 198px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.index-card {
+  @include IndexCard;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+.index-card-intro {
+  border-radius: 10px;
+  // max-width: 800px !important;
+  margin: 40px 20px;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.navbar {
+  background-color: rgba(158, 158, 158, 0.562);
+  width: 100%;
+}
+
+.index-book-name {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.844);
+}
+
+.index-buybook {
+  margin-top: 24px;
+  margin-bottom: 35px;
+  font-size: 20px;
+}
+
+.index-book-writter {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(56, 55, 55, 0.898);
+}
+
+.parent-index-card {
+  padding-bottom: 120px;
+  max-width: 800px !important;
+}
+
+.index-card-child {
+  align-items: center;
+  padding: 45px 64px;
+  margin: 0;
+}
+
+/* modal */
+
+.modalcard {
+  width: 500px;
+  margin: 20px;
+}
+
+.modal-inside-button {
+  @include modalInsideButton;
+
+  &:hover {
+    background-color: $yellowHoverColor;
+  }
+}
+
+label {
+  font-size: 17px;
+}
+
+.form-control {
+  margin-top: 10px;
+  border-radius: 30px !important;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* code for header */
+
+.homeimage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/home-page-img/home.jpg");
+  height: 100vh;
+  opacity: 0.8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.nav-text {
+  font-size: calc(100% + 6vw);
+}
+
+.overlay {
+  @include Overlay;
+}
+
+/* news letter */
+
+.news-letter-btn {
+  @include newsLetterBtn;
+
+  &:hover {
+    background-color: $yellowHoverColor;
+  }
+}
+
+.news-letter-input {
+  @include newsLetterInput;
+}
